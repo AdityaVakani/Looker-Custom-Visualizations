@@ -83,8 +83,8 @@ const getLinksFromRow = (row: Row): Link[] => {
 }
 
 const vis: SunburstVisualization = {
-  id: 'sunburst', // id/label not required, but nice for testing and keeping manifests in sync
-  label: 'Sunburst',
+  id: 'custom_test2', // id/label not required, but nice for testing and keeping manifests in sync
+  label: 'Custom Test 2',
   options: {
     color_range: {
       type: 'array',
