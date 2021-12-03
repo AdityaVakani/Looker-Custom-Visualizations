@@ -1,3 +1,4 @@
+const { sankey } = require('d3-sankey');
 var path = require('path')
 
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -6,7 +7,8 @@ var webpackConfig = {
   mode: 'production',
   entry: {
     custom_test1: './src/custom_test1/custom_visual_test.js',
-    custom_test2: './src/custom_test2/custom_test2.ts'
+    custom_test2: './src/custom_test2/custom_test2.ts',
+    sankey_test1: './src/sankey_test/sankey_test.ts'
   },
   output: {
     filename: "[name].js",
