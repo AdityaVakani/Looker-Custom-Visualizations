@@ -59,7 +59,7 @@ const vis: Sankey = {
   // Render in response to the data or settings changing
   updateAsync (data, element, config, queryResponse, details, doneRendering) {
     if (!handleErrors(this, queryResponse, {
-      min_pivots: 0, max_pivots: 1,
+      min_pivots: 0, max_pivots: 100,
       min_dimensions: 2, max_dimensions: undefined,
       min_measures: 1, max_measures: 1
     })) return
